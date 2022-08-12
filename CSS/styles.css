@@ -1,0 +1,183 @@
+/*
+Color Palatte
+#6495ED -  Cornflower Blue
+#383F51 - Charcoal
+#DA4167 - Red/Pink
+#AEB4A9 - Ash Gray
+#F0F7EE - Mint Cream
+*/
+
+
+/***************************************
+Global Styles
+***************************************/
+
+@font-face {
+  font-family: "SF Old Republic";
+  src: url("sf_old_republic/SFOldRepublic.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Old Republic";
+  src: url("sf_old_republic/SFOldRepublicItalic.ttf");
+  font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #383F51;
+  color: #F0F7EE;
+  font-family: 'SF Old Republic', 'Arial', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+  line-height: 1.5;  
+}
+
+img {
+  width: 300px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  letter-spacing: 1px;
+  padding-bottom: 0;
+}
+
+h4 {
+  border: 0;
+  font-size: 1em;
+}
+
+
+.content-wrap {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+  /* padding: 40px; */
+}
+
+a {
+  color: #DA4167;
+  padding: 2px;
+}
+
+/***************************************
+Header
+***************************************/
+header {
+  background: #6495ED;
+  /* margin-bottom: 60 px; */
+  overflow: auto;
+}
+
+header img {
+  float: left;
+  padding-top: 0px;
+  width: 350px;
+}
+
+
+
+header .content-wrap {
+  padding-bottom: 75px;
+}
+
+/***************************************
+Work Experience
+***************************************/
+.work-experiance {
+  clear: both;
+}
+
+
+
+/***************************************
+Portfolio Projects
+***************************************/
+
+.portfolio-item-container {
+  display: inline-flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.portfolio-item  {
+  width: 40%;
+  clear: auto;
+  padding: 20px;
+}
+
+.portfolio-item p {
+  /* margin-bottom: auto; */
+  padding-bottom: 20px;
+
+}
+
+.project-btn {
+  color: #F0F7EE;
+  background: #6495ED;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  max-width: max-content;
+  text-align: center;
+  margin-top: auto;
+  /* margin-bottom: 0; */
+  align-self: flex-end;
+  flex: 1;
+}
+
+.project-btn:hover {
+  background: rgba(100, 149, 237, 50%)
+}
+
+/***************************************
+Education
+***************************************/
+.education {
+  background: #DA4167;
+}
+
+
+/***************************************
+Certs & Skills
+***************************************/
+.certifications p, .certifications p {
+  margin: 0;
+  border: 0;
+}
+/***************************************
+Footer
+***************************************/
+
+footer {
+  background: #6495ED;
+  text-align: center;
+}
+
+footer a, footer h2 {
+  color: #383F51;
+}
+
+.contact-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
