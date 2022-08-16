@@ -63,7 +63,7 @@ h4 {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px 0;
   /* padding: 40px; */
 }
 
@@ -77,16 +77,8 @@ Header
 ***************************************/
 header {
   background: #6495ED;
-  /* margin-bottom: 60 px; */
   overflow: auto;
 }
-
-header img {
-  float: left;
-  padding-top: 0px;
-  width: 350px;
-}
-
 
 
 header .content-wrap {
@@ -96,9 +88,15 @@ header .content-wrap {
 /***************************************
 Work Experience
 ***************************************/
-.work-experiance {
-  clear: both;
+/* .work-experience {
+  background: #DA4167;
 }
+
+.work-experience a {
+  color: #383F51;
+  padding: 2px;
+} */
+
 
 
 
@@ -106,23 +104,12 @@ Work Experience
 Portfolio Projects
 ***************************************/
 
-.portfolio-item-container {
-  display: inline-flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.portfolio-item  {
-  width: 40%;
-  clear: auto;
-  padding: 20px;
-}
-
 .portfolio-item p {
-  /* margin-bottom: auto; */
   padding-bottom: 20px;
-
+  margin-top: 8px;
 }
+
+
 
 .project-btn {
   color: #F0F7EE;
@@ -133,10 +120,9 @@ Portfolio Projects
   max-width: max-content;
   text-align: center;
   margin-top: auto;
-  /* margin-bottom: 0; */
-  align-self: flex-end;
-  flex: 1;
 }
+
+
 
 .project-btn:hover {
   background: rgba(100, 149, 237, 50%)
@@ -167,17 +153,72 @@ footer {
 }
 
 footer a, footer h2 {
-  color: #383F51;
+  color: #F0F7EE;
 }
 
 .contact-list {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
   padding: 0;
 }
 
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+
+
+/***************************************
+Responsive Styles
+***************************************/
+
+@media screen and (min-width: 1010px){
+  header img {
+    float: left;
+    padding-top: 0px;
+    width: 350px;
+  } 
+}
+
+
+@media screen and (min-width: 700px){
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+
+.portfolio-item-container {
+  display: inline-flex;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.portfolio-item  {
+  width: 40%;
+  clear: auto;
+  padding: 20px;
+  position: relative;
+}
+
+
+.project-btn {
+  /*   
+  This next part puts the button at the bottom of the div
+  This seems a bit excessive but the other methods I found online didn' work
+  https://www.youtube.com/watch?v=1PB6HTvO8X8 
+  */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+}
+
+@media screen and (max-width: 699px) {
+  .portfolio-item h3 {
+    padding-top: 20px;
+  }
 }
